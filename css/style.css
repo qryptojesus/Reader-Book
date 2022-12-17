@@ -1,0 +1,15 @@
+.container {
+    padding: 10%;
+}
+
+p {
+    display: block;
+}
+
+input {
+    margin: 5px 0;
+}
+
+span {
+    font-weight: 700;
+}
