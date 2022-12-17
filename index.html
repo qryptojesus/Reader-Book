@@ -13,11 +13,33 @@
 <body>
     <div class="container">
         <div class="alert alert-success" role="alert">
-            <h4 class="alert-heading">Читатель! Загрузите файл .txt, скаченный с <a href="https://royallib.com/" target="_blank">электронной библиотеки Royallib</a></h4>
-            <input class="mx-auto" type="file" onchange="readFile(this)">
-            <p id="title"></p>
-            <hr>
-            <p class="mb-0" id="reading-time"></p>
+            <div class="accordion accordion-flush">
+                <div class="accordion-item">
+                    <h4 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Читатель! Сейчас ты узнаешь за сколько ты прочтешь книгу!
+                      </button>
+                    </h4>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <ul class="list-group-flush">
+                                <li class="list-group-item">Выбери нужную книгу</li>
+                                <li class="list-group-item">Найди её в электронной библиотеки <a href="https://royallib.com/" target="_blank">Royallib</a></li>
+                                <li class="list-group-item">Скачай на компьютер в архиве TXT-файл</li>
+                                <li class="list-group-item">Разархивируйте zip-архив</li>
+                                <li class="list-group-item">Загрузите в форму ниже &#128071;</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <input type="file" class="form-control" id="inputGroupFile02" onchange="readFile(this)">
+                    </div>
+                    <p id="title"></p>
+                    <hr>
+                    <p class="mb-0" id="reading-time"></p>
+                </div>
+            </div>
         </div>
     </div>
 </body>
